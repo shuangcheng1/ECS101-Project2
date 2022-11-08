@@ -47,7 +47,15 @@ def exploreOnly():
     # return happiness
     print(happiness)
 
-# def eGreedy()
+def eGreedy(e = 10):
+    cafeteria1 = random.normalvariate(10, 8)
+    cafeteria2 = random.normalvariate(15, 6)
+    cafeteria3 = random.normalvariate(10, 8)
+
+
+    r = random.random()
+    if r < (e/100):
+        i = random.randint(1,3)
 
 
 
