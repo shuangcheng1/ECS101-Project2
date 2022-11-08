@@ -37,7 +37,7 @@ def exploitOnly():
 
     print(happiness)
 
-def explore():
+def exploreOnly():
     happiness = 0
     for x in range(100):
         happiness += random.normalvariate(10, 8)
@@ -47,6 +47,7 @@ def explore():
     # return happiness
     print(happiness)
 
+# def eGreedy()
 
 
 
