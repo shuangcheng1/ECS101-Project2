@@ -6,10 +6,9 @@ import random
 def exploitOnly():
     happiness = 0
     cafeterias = []
-    cafeteria1 = random.normalvariate(10, 8)
-    cafeterias.append(cafeteria1)
+    cafeterias.append(random.normalvariate(10, 8))
 
-    happiness += cafeteria1
+    happiness += random.normalvariate(10, 8)
 
     cafeteria2 = random.normalvariate(15, 6)
     cafeterias.append(cafeteria2)
@@ -62,21 +61,20 @@ def eGreedy(e = 10):
 
     best = max(cafeterias)
 
+    for x in range(297):
 
-    r = random.random()
-    if r < (e/100):
-        i = random.randint(1,3)
-        if i == 1:
-            happiness += random.normalvariate(10, 8)
-        elif i == 2:
-            happiness += random.normalvariate(15, 6)
+        r = random.random()
+        if r < (e/100):
+            i = random.randint(1,3)
+
+            if i == 1:
+                happiness += random.normalvariate(10, 8)
+            elif i == 2:
+                happiness += random.normalvariate(15, 6)
+            else:
+                happiness += random.normalvariate(12, 5)
         else:
-            happiness += random.normalvariate(12, 5)
-
-
-    else:
-        happiness += best
-
+            happiness += best
 
     return happiness
 
